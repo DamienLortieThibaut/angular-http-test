@@ -1,0 +1,7 @@
+<div *ngIf="data">
+    <div *ngFor="let user of data.users">
+        <p>Nom: {{ user.lastName }}</p>
+        <p>Prénom: {{ user.firstName }}</p>
+    </div>
+    <button (click)="downloadJson()">Télécharger</button>
+</div>
